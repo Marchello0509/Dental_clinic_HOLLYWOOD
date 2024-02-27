@@ -8,3 +8,222 @@
     display: flex;
     justify-content: $justify;
 }
+
+
+.header {
+    width: 100%;
+    height: 837px;
+    background: linear-gradient(180.00deg, rgb(0, 0, 0) 6.494%,rgba(0, 0, 0, 0) 93.59%);
+    &_head {
+        @include FlexElement(space-between, center);
+        width: 100%;
+        height: 46px;
+        position: fixed;
+        z-index: 3;
+        margin: 0 auto;
+        backdrop-filter: blur(4px);
+        background: rgba(0, 0, 0, 0.63);
+        &_logo {
+            display: flex;
+            margin-left: 5px;
+            &_img1 {
+                width: 26px;
+                height: 36px;           
+            }
+            &_img2 {
+                width: 157px;
+                height: 26px;       
+                margin-top: 5px;
+                margin-left: 5px;
+            }
+        }
+        &_nav {
+            width: 750px;
+            height: 17px;
+            &_ul {
+                @include FlexElement(space-between, center);
+                &_li {
+                    list-style: none;
+                    &_a {
+                        color: #fff;
+                        font-family: "Montserrat";
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal; 
+                        text-decoration: none;
+                        transition-duration: 0.6s;
+                        &:hover {
+                            transition-duration: 0.6s;      
+                            font-weight: 900;
+                        }
+                    }
+                }            
+            }
+        }
+        &_btn {
+            width: 267px;
+            height: 35px;
+            text-align: center;
+            color: #fff;
+            font-family: "Montserrat";
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal; 
+            text-decoration: none;
+            border: 1px solid rgb(255, 255, 255);
+            border-radius: 5px;
+            background: none;
+            cursor: pointer;
+            transition-duration: 0.6s; 
+            margin-right: 5px;    
+            &:hover {
+                transition-duration: 0.6s;     
+                color: #000;
+                background: rgb(255, 255, 255);        
+            }
+        }
+    }
+    &_hblock {
+        @include FlexElement(center, center);
+        width: 100%;
+        height: 640px;
+        column-gap: 50px;
+        &_text {
+            margin-top: 100px;
+            width: 530px;
+            height: 229px;       
+            color: #fff;
+            font-family: "Montserrat";
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal; 
+            text-align: center;
+            text-shadow: 1px 1px 2px #000;
+        }
+        &_imgblock {
+            margin-top: 100px;
+            width: 720px;
+            height: 590px;
+            &_imgb1 {
+                position: absolute;
+                border: 2px solid rgb(255, 255, 255);
+                border-radius: 5px;
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);           
+                width: 427px;
+                height: 213px;
+                background: url(../img/workers/изображение_viber_2024-02-26_18-15-14-732.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                z-index: 1;
+            }
+            &_imgb2 {
+                position: absolute;
+                border: 2px solid rgb(255, 255, 255);
+                border-radius: 5px;
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);           
+                width: 427px;
+                height: 213px;
+                background: url(../img/workers/изображение_viber_2024-02-26_18-14-33-020.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin-top: 185px;
+                margin-left: 140px;
+                z-index: 2;
+            }
+            &_imgb3 {
+                position: absolute;
+                border: 2px solid rgb(255, 255, 255);
+                border-radius: 5px;
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);           
+                width: 427px;
+                height: 213px;
+                background: url(../img/workers/изображение_viber_2024-02-26_18-14-33-206.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin-top: 375px;
+                margin-left: 290px;
+                z-index: 2;
+            }
+        }
+    }
+}
+.main {
+    &_block1 {
+        @include FlexElement(center, center);
+        background: url(../img/workers/изображение_viber_2024-02-26_18-32-10-775.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 750px;
+        &_blur {
+            filter: blur(5px);
+            background: inherit;
+            width: 100%;
+            height: 750px;
+        }
+        &_text {
+            position: absolute;
+            width: 1212px;
+            height: 194px;
+            color: #fff;
+            font-family: "Montserrat";
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal; 
+            text-align: center;
+            text-shadow: 1px 1px 2px #000;
+        }
+    }
+    &_block2 {
+        &_bl1 {
+            @include ForBlocks(center);
+            margin-top: 90px;
+            &_text {
+                width: 1017px;
+                height: 159px;      
+                color: #000000;
+                font-family: "Montserrat";
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal; 
+                text-align: center;      
+            }
+        }
+        &_bl2 {
+            @include ForBlocks(center);        
+            margin-top: 60px;
+            width: 100%;
+            height: 348px;
+            overflow: hidden; 
+            position: relative;
+            &_cont {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                position: relative;
+                &_cw {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;   
+                    position: absolute;
+                    animation: rotation 10s linear infinite;
+                    &_cardsc {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;        
+                        &_box {
+                            box-shadow: 0px 0px 2rem 0px #888888;         
+                            position: relative; 
+                        }        
+                    }       
+                }
+            }
+        }
+    }
+}
+
