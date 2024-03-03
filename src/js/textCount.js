@@ -22,7 +22,7 @@ let texts2 = [
 let currentIndex1 = 0;
 let currentIndex2 = 0;
 
-function changeText() {
+const changeText = () => {
     texts.text1.textContent = texts1[currentIndex1];
     texts.text2.textContent = texts2[currentIndex2];
 

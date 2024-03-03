@@ -9,6 +9,9 @@
     justify-content: $justify;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 .header {
     width: 100%;
@@ -207,7 +210,8 @@
                     font-weight: 600;
                     line-height: normal; 
                     text-align: center; 
-                    margin-top: 25px;          
+                    margin-top: 25px;  
+                    color: #000000;        
                 }
             }
             &_text2 {
@@ -219,10 +223,418 @@
                     font-weight: 600;
                     line-height: normal; 
                     text-align: center; 
-                    margin-top: 5px;          
+                    margin-top: 5px; 
+                    color: #000000;         
                 }
             }
         }
     }
+    &_block3 {
+        width: 100%;
+        height: 512px;
+        background: rgb(35, 35, 35);     
+        &_fortext {
+            @include ForBlocks(center);  
+            &_title {
+                font-family: "Montserrat";
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal; 
+                text-align: center; 
+                margin-top: 40px;       
+                color: #fff;      
+            }       
+        } 
+        &_forslider2 {
+            @include ForBlocks(center);    
+            column-gap: 45px;
+            margin-top: 25px;
+            &_btn1 {
+                background: none;
+                border: none;
+                cursor: pointer;
+            } 
+            &_img {
+                opacity: 1;
+                transition: opacity 0.5s ease-in-out;     
+            }
+            &_img.hide {
+                opacity: 0;
+            } 
+            &_btn2 {
+                background: none;
+                border: none;
+                cursor: pointer;         
+            }
+        }
+    }
+    &_block4 {
+        width: 100%;
+        height: 488px;
+        &_fortext {
+            @include ForBlocks(center);        
+            &_title {
+                font-family: "Montserrat";
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal; 
+                text-align: center; 
+                margin-top: 20px;       
+                color: #000000;             
+            } 
+        }
+        &_forslider3 {
+            @include ForBlocks(center);    
+            &_bl {
+                width: 450px;
+                height: 375px;   
+                border-radius: 15px;
+                box-shadow: 1px 1px 4px 5px rgba(0, 0, 0, 0.25);
+                background: rgb(255, 255, 255);      
+                margin-top: 15px;
+                &_fortxt1 {
+                    @include ForBlocks(center);    
+                    margin-top: 75px;
+                    column-gap: 5px;
+                    &_text {
+                        font-family: "Montserrat";
+                        font-size: 36px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal; 
+                        text-align: center; 
+                        color: #000000;   
+                        margin-top: 4px;
+                    }
+                }
+                &_fortxt {
+                    @include ForBlocks(center);    
+                    margin-top: 45px;
+                    column-gap: 5px;
+                    &_text {
+                        font-family: "Montserrat";
+                        font-size: 36px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal; 
+                        text-align: center; 
+                        color: #000000;   
+                        margin-top: 5px;
+                    }
+                }
+                &_fortxt5 {
+                    @include ForBlocks(center);    
+                    margin-top: 75px;
+                    column-gap: 5px;
+                    &_text5 {
+                        font-family: "Montserrat";
+                        font-size: 36px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal; 
+                        text-align: center; 
+                        color: #000000;   
+                        margin-top: 15px;
+                    }
+                }
+                &_fortxt6 {
+                    @include ForBlocks(center);    
+                    margin-top: 45px;
+                    column-gap: 5px;
+                    &_text6 {
+                        font-family: "Montserrat";
+                        font-size: 36px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal; 
+                        text-align: center; 
+                        color: #000000;   
+                        margin-top: 15px;
+                    }
+                }
+                &_fortxt7 {
+                    @include ForBlocks(center);    
+                    margin-top: 65px;
+                    column-gap: 5px;
+                    &_text7 {
+                        font-family: "Montserrat";
+                        font-size: 36px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal; 
+                        text-align: center; 
+                        color: #000000;   
+                        margin-top: 15px;
+                    }
+                }
+                &_fortxt2 {
+                    @include ForBlocks(center);    
+                    margin-top: 25px;
+                    column-gap: 5px;
+                    &_text {
+                        font-family: "Montserrat";
+                        font-size: 32px;
+                        font-style: italic;
+                        font-weight: 500;
+                        line-height: normal; 
+                        text-align: center; 
+                        color: #000000;   
+                        margin-top: 4px;
+                    }
+                    &_text2 {
+                        font-family: "Montserrat";
+                        font-size: 32px;
+                        font-style: italic;
+                        font-weight: 500;
+                        line-height: normal; 
+                        text-align: center; 
+                        color: #000000;   
+                    }
+                }
+                &_fortxt3 {
+                    @include ForBlocks(center);    
+                    margin-top: 25px;
+                    column-gap: 5px;
+                    &_text {
+                        font-family: "Montserrat";
+                        font-size: 32px;
+                        font-style: normal;
+                        font-weight: 800;
+                        line-height: normal; 
+                        text-align: center; 
+                        color: #000000;   
+                        margin-top: 4px;
+                    }
+                    &_text2 {
+                        font-family: "Montserrat";
+                        font-size: 32px;
+                        font-style: normal;
+                        font-weight: 800;
+                        line-height: normal; 
+                        text-align: center; 
+                        color: #000000;  
+                    }
+                }
+            }  
+        }
+    }
+    &_block5 {
+        width: 100%;
+        height: 1460px;
+        &_fortext1 {
+            @include ForBlocks(center);    
+            &_p {
+                font-family: "Montserrat";
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal; 
+                text-align: center; 
+                color: #000000;         
+            }
+        }
+        &_fortext2 {
+            @include ForBlocks(center);    
+            column-gap: 2px;
+            &_p {
+                font-family: "Montserrat";
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal; 
+                text-align: center; 
+                color: #000000;         
+            }
+            &_p2 {
+                font-family: "Montserrat";
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal; 
+                text-align: center; 
+                color: #39248B;     
+                text-decoration: none;    
+            }
+        }
+    }
+    &_block6 {
+        @include ForBlocks(center);  
+        &_iframe {
+            margin-top: 10px;
+            width: 100%;
+            height: 660px;
+        }     
+    }
+    &_block7 {
+        width: 100%;
+        height: 1506px;
+        background: rgba(0, 255, 0, 0.189);
+        &_fortext1 {
+            @include ForBlocks(center);    
+            &_p {
+                font-family: "Montserrat";
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal; 
+                text-align: center; 
+                color: #000000;         
+            }
+        }
+        &_fortext2 {
+            @include ForBlocks(center);    
+            column-gap: 2px;
+            margin-top: 15px;
+            &_p {
+                font-family: "Montserrat";
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal; 
+                text-align: center; 
+                color: #000000;         
+            }
+            &_p2 {
+                font-family: "Montserrat";
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal; 
+                text-align: center; 
+                color: #39248B;     
+                text-decoration: none;    
+            }
+        }
+    }
+    &_block8 {
+        @include ForBlocks(center);  
+        &_iframe {
+            margin-top: 10px;
+            width: 100%;
+            height: 660px;
+        }     
+    }
 }
-
+.footer {
+    @include FlexElement(center,center);
+    width: 100%;
+    height: 380px;
+    background: #232323;
+    column-gap: 165px;
+    &_bl1 {
+        width: 220px;
+        height: 180px;
+        &_logo {
+            display: flex;
+            column-gap: 5px;
+            &_img1 {
+                width: 26px;
+                height: 36px;
+            }
+            &_img2 {
+                width: 157px;
+                height: 25px;
+                margin-top: 5px;
+            }
+        }
+        &_text1 {
+            font-family: "Montserrat";
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal; 
+            color: #fff;     
+            margin-top: 16px;     
+        }
+        &_foraddress {
+            &_address1 {
+                font-family: "Montserrat";
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal; 
+                color: #fff;     
+                margin-top: 10px;            
+            }
+            &_address2 {
+                font-family: "Montserrat";
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal; 
+                text-align: center; 
+                color: #6a51cd;     
+                text-decoration: none;        
+            }
+        }
+        &_foraddress2 {
+            &_address1 {
+                font-family: "Montserrat";
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal; 
+                color: #fff;     
+                margin-top: 10px;            
+            }
+            &_address2 {
+                font-family: "Montserrat";
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal; 
+                text-align: center; 
+                color: #6a51cd;     
+                text-decoration: none;        
+            }
+        }
+    }
+    &_bl2 {
+        width: 115px;
+        height: 130px;
+        &_text {
+            font-family: "Montserrat";
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal; 
+            color: #fff;         
+        }
+        &_ul {
+            margin-top: 4px;
+            &_li {
+                list-style: none;  
+                margin-top: 3px;
+                &_a {
+                    font-family: "Montserrat";
+                    font-size: 13px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal; 
+                    color: #fff;   
+                    text-decoration: none;
+                    transition-duration: 0.6s;      
+                    &:hover {
+                        transition-duration: 0.6s;  
+                        color: #6a51cd;           
+                    }       
+                }    
+            }
+        }
+    }
+    &_bl3 {
+        width: 812px;
+        height: 126px;
+        &_text {
+            font-family: "Montserrat";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal; 
+            color: #fff;   
+            text-align: center;        
+        }
+    }
+}
