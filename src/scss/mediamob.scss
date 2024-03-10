@@ -9,7 +9,7 @@
     justify-content: $justify;
 }
 
-@media screen and (max-width:1025px) and (min-width:432px) {
+@media screen and (max-width:431px) and (min-width:320px) {
     .header {
         display: none;
     }
@@ -19,14 +19,15 @@
     .footer {
         display: none;
     }
-    .tabHeader {
+    .mobHeader {
+        display: block;
         width: 100%;
-        height: 950px;
+        height: 715px;
         background: linear-gradient(180.00deg, rgb(0, 0, 0) 6.494%,rgba(0, 0, 0, 0) 93.59%);
         &_head {
             @include FlexElement(space-between, center);
             width: 100%;
-            height: 45px;
+            height: 50px;
             position: fixed;
             z-index: 3;
             margin: 0 auto;
@@ -34,46 +35,19 @@
             background: rgba(0, 0, 0, 0.63);
             &_logo {
                 display: flex;
+                margin-left: 5px;
                 &_img1 {
-                    display: block;
-                    width: 20px;
-                    height: 29px;          
+                    width: 25px;
+                    height: 36px;          
                 }
                 &_img2 {
-                    display: block;
-                    width: 117px;
-                    height: 17px;    
-                    margin-top: 5px;
-                    margin-left: 2px;
-                }
-            }
-            &_nav {
-                display: block;
-                width: 497px;
-                height: 22px;
-                &_ul {
-                    @include FlexElement(space-between, center);
-                    &_li {
-                        list-style: none;
-                        &_a {
-                            color: #fff;
-                            font-family: "Montserrat";
-                            font-size: 15px;
-                            font-style: normal;
-                            font-weight: 600;
-                            line-height: normal; 
-                            text-decoration: none;
-                            transition-duration: 0.6s;
-                            &:hover {
-                                transition-duration: 0.6s;      
-                                font-weight: 900;
-                            }
-                        }
-                    }            
+                    width: 156px;
+                    height: 25px;    
+                    margin-top: 6px;
+                    margin-left: 5px;
                 }
             }
             &_btn {
-                display: block;
                 width: 95px;
                 height: 35px;
                 text-align: center;
@@ -94,40 +68,40 @@
                     transition-duration: 0.6s;     
                     color: #000;
                     background: rgb(255, 255, 255);        
-                }
+                }            
             }
         }
         &_hblock {
             display: block;
-            &_bl1 {
+            &_fortext {
                 @include ForBlocks(center);
                 &_text {
                     text-align: center;
                     color: #fff;
                     font-family: "Montserrat";
-                    font-size: 36px;
+                    font-size: 24px;
                     font-style: normal;
                     font-weight: 600;
-                    line-height: normal; 
+                    line-height: normal;    
                     text-shadow: 1px 1px 2px #000;         
-                    width: 501px;
-                    height: 229px; 
-                    margin-top: 75px;
+                    width: 329px;
+                    height: 144px;
+                    margin-top: 70px;
                 }
             }
             &_forimgblock {
                 @include ForBlocks(center);
                 &_imgblock {
                     margin-top: 30px;
-                    width: 720px;
-                    height: 590px;
+                    width: 315px;
+                    height: 412px;
                     &_imgb1 {
                         position: absolute;
                         border: 2px solid rgb(255, 255, 255);
                         border-radius: 5px;
                         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);           
-                        width: 427px;
-                        height: 213px;
+                        width: 315px;
+                        height: 157px;
                         background: url(../img/workers/изображение_viber_2024-02-26_18-15-14-732.jpg);
                         background-repeat: no-repeat;
                         background-size: cover;
@@ -138,13 +112,12 @@
                         border: 2px solid rgb(255, 255, 255);
                         border-radius: 5px;
                         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);           
-                        width: 427px;
-                        height: 213px;
+                        width: 315px;
+                        height: 157px;
                         background: url(../img/workers/изображение_viber_2024-02-26_18-14-33-020.jpg);
                         background-repeat: no-repeat;
                         background-size: cover;
-                        margin-top: 185px;
-                        margin-left: 140px;
+                        margin-top: 140px;
                         z-index: 2;
                     }
                     &_imgb3 {
@@ -152,119 +125,114 @@
                         border: 2px solid rgb(255, 255, 255);
                         border-radius: 5px;
                         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);           
-                        width: 427px;
-                        height: 213px;
+                        width: 315px;
+                        height: 157px;
                         background: url(../img/workers/изображение_viber_2024-02-26_18-14-33-206.jpg);
                         background-repeat: no-repeat;
                         background-size: cover;
-                        margin-top: 375px;
-                        margin-left: 290px;
+                        margin-top: 280px;
                         z-index: 2;
                     }
                 }
             }
         }
-    }
-    .tabMain {
+    } 
+    .mobMain {
         &_block1 {
             display: block;
             &_fortext {
                 @include FlexElement(center, center);
-                margin-top: 65px;
                 width: 100%;
-                height: 561px;
+                height: 428px;
                 background: url(../img/workers/изображение_viber_2024-02-26_18-32-10-775.jpg);
                 background-repeat: no-repeat;
-                background-size: cover;
+                background-size: cover;   
                 &_blur {
                     filter: blur(5px);
                     background: inherit;
                     width: 100%;
-                    height: 561px;
+                    height: 428px;
                 }
                 &_text {
                     position: absolute;
                     color: #fff;
                     font-family: "Montserrat";
-                    width: 721px;
+                    width: 320px;
                     height: 166px;
-                    font-size: 24px;
+                    font-size: 16px;
                     font-style: normal;
                     font-weight: 600;
                     line-height: normal; 
                     text-align: center;
                     text-shadow: 1px 1px 2px #000;
-                }
+                }        
             }
         }
         &_block2 {
             display: block;
-            &_bl {
-                width: 100%;
-                height: 637px;
-                &_fortext {
-                    @include ForBlocks(center);
-                    &_text {
-                        margin-top: 30px;
-                        color: #000;
-                        font-family: "Montserrat";
-                        width: 700px;
-                        height: 202px;
-                        font-size: 24px;
-                        font-style: normal;
-                        font-weight: 600;
-                        line-height: normal; 
-                        text-align: center;
-                    }     
+            &_fortext {
+                @include ForBlocks(center);
+                &_text {
+                    margin-top: 29px;
+                    color: #000000;
+                    font-family: "Montserrat";
+                    width: 317px;
+                    height: 219px;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal; 
+                    text-align: center;                
                 }
-                &_forimg {
-                    @include ForBlocks(center);
-                    &_img {
-                        margin-top: 30px;
-                        box-sizing: border-box;
-                        border: 1px solid rgb(209, 209, 209);
-                        border-radius: 5px;
-                        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-                        opacity: 1;
-                        transition: opacity 0.5s ease-in-out;     
-                    }
-                    &_img.hide {
-                        opacity: 0;
-                    } 
+            }
+            &_forimg {
+                @include ForBlocks(center);
+                &_img {
+                    margin-top: 10px;
+                    box-sizing: border-box;
+                    border: 1px solid rgb(209, 209, 209);
+                    border-radius: 5px;
+                    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                    opacity: 1;
+                    transition: opacity 0.5s ease-in-out;     
                 }
-                &_forp1 {
-                    @include ForBlocks(center); 
-                    &_p {
-                        font-family: "Montserrat";
-                        font-size: 20px;
-                        font-style: italic;
-                        font-weight: 600;
-                        line-height: normal; 
-                        text-align: center; 
-                        margin-top: 20px; 
-                        color: #000000;     
-                    }
+                &_img.hide {
+                    opacity: 0;
+                } 
+            }
+            &_forp1 {
+                @include ForBlocks(center); 
+                &_p {
+                    font-family: "Montserrat";
+                    font-size: 16px;
+                    font-style: italic;
+                    font-weight: 600;
+                    line-height: normal; 
+                    text-align: center; 
+                    margin-top: 20px; 
+                    color: #000000;     
                 }
-                &_forp2 {
-                    @include ForBlocks(center); 
-                    &_p {
-                        font-family: "Montserrat";
-                        font-size: 20px;
-                        font-style: italic;
-                        font-weight: 600;
-                        line-height: normal; 
-                        text-align: center; 
-                        margin-top: 5px; 
-                        color: #000000;     
-                    }
+            }
+            &_forp2 {
+                @include ForBlocks(center); 
+                &_p {
+                    font-family: "Montserrat";
+                    font-size: 16px;
+                    font-style: italic;
+                    font-weight: 600;
+                    line-height: normal; 
+                    text-align: center; 
+                    margin-top: 5px; 
+                    color: #000000;     
                 }
             }
         }
         &_block3 {
             display: block;
             &_bl {
+                margin-top: 15px;
                 width: 100%;
-                height: 500px;
+                height: 470px;
                 background: rgb(35, 35, 35);
                 &_fortext {
                     @include ForBlocks(center);       
@@ -272,7 +240,7 @@
                         margin-top: 33px;
                         color: #ffffff;
                         font-family: "Montserrat";
-                        font-size: 24px;
+                        font-size: 20px;
                         font-style: normal;
                         font-weight: 600;
                         line-height: normal;     
@@ -283,7 +251,7 @@
                     &_img {
                         width: 100%;
                         height: 370px;
-                        margin-top: 32px;
+                        margin-top: 20px;
                     }
                 }
             }
@@ -292,11 +260,11 @@
             display: block;
             &_bl {
                 width: 100%;
-                height: 485px;
+                height: 460px;
                 &_fortext {
                     @include ForBlocks(center);       
                     &_text {
-                        margin-top: 22px;
+                        margin-top: 50px;
                         color: #000000;
                         font-family: "Montserrat";
                         font-size: 24px;
@@ -308,15 +276,10 @@
                 &_forslider3 {
                     @include ForBlocks(center);    
                     &_block {
-                        width: 450px;
-                        height: 375px;   
-                        border-radius: 15px;
-                        box-shadow: 1px 1px 4px 5px rgba(0, 0, 0, 0.25);
-                        background: rgb(255, 255, 255);      
-                        margin-top: 25px;
+                        width: 100%;     
                         &_fortxt1 {
                             @include ForBlocks(center);    
-                            margin-top: 75px;
+                            margin-top: 20px;
                             column-gap: 5px;
                             &_text {
                                 font-family: "Montserrat";
@@ -444,8 +407,9 @@
         &_block5 {
             display: block;
             &_bl {
+                margin-top: 10px;
                 width: 100%;
-                height: 1480px;
+                height: 912px;
                 &_forp1 {
                     @include ForBlocks(center);   
                     &_p  {
@@ -463,7 +427,7 @@
                     margin-top: 15px;
                     &_p {
                         font-family: "Montserrat";
-                        font-size: 28px;
+                        font-size: 24px;
                         font-style: normal;
                         font-weight: 600;
                         line-height: normal; 
@@ -472,7 +436,7 @@
                     }
                     &_p2 {
                         font-family: "Montserrat";
-                        font-size: 28px;
+                        font-size: 24px;
                         font-style: normal;
                         font-weight: 600;
                         line-height: normal; 
@@ -483,16 +447,15 @@
                 }
                 &_iframe1 {
                     width: 100%;
-                    height: 660px;
+                    height: 350px;
                     margin-top: 15px;
                 }  
                 &_forp3 {
                     @include ForBlocks(center);    
-                    column-gap: 2px;
                     margin-top: 15px;
                     &_p {
                         font-family: "Montserrat";
-                        font-size: 28px;
+                        font-size: 24px;
                         font-style: normal;
                         font-weight: 600;
                         line-height: normal; 
@@ -501,7 +464,7 @@
                     }
                     &_p2 {
                         font-family: "Montserrat";
-                        font-size: 28px;
+                        font-size: 24px;
                         font-style: normal;
                         font-weight: 600;
                         line-height: normal; 
@@ -512,19 +475,19 @@
                 }
                 &_iframe2 {
                     width: 100%;
-                    height: 660px;
+                    height: 350px;
                     margin-top: 15px;
                 } 
             }
         }
     }
-    .tabFooter {
+    .mobFooter {
         &_forblock {
             display: block;
             &_block {
                 @include FlexElement(center, center);
                 width: 100%;
-                height: 377px;
+                height: 248px;
                 background: rgb(35, 35, 35);
                 &_bl1 {
                     width: 220px;
@@ -607,6 +570,24 @@
                         text-align: center;      
                     }
                 }
+            }
+        }
+    }
+    .forbtn {
+        position: fixed;
+        display: block;
+        z-index: 2;
+        right: 25px;
+        bottom: 10px;
+        &_a {
+            text-decoration: none;
+            &_btn {
+                @include FlexElement(center, center);
+                width: 64px;
+                height: 66px;        
+                box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.25);
+                background: rgb(255, 255, 255);
+                border-radius: 100px;
             }
         }
     }

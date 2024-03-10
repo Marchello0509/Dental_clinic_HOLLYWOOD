@@ -28,3 +28,37 @@
         display: none;
     }
 }
+
+.mobHeader {
+    &_head {
+        display: none;
+    }
+    &_hblock {
+        display: none;
+    }    
+}
+.mobMain {
+    &_block1 {
+        display: none;
+    }
+    &_block2 {
+        display: none;
+    }
+    &_block3 {
+        display: none;
+    }
+    &_block4 {
+        display: none;
+    }
+    &_block5 {
+        display: none;
+    }
+}
+.mobFooter {
+    &_forblock {
+        display: none;
+    }
+}
+.forbtn {
+    display: none;
+}
