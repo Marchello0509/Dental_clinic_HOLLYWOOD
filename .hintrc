@@ -25,6 +25,12 @@
         "link-name": "off",
         "button-name": "off"
       }
+    ],
+    "axe/forms": [
+      "default",
+      {
+        "label": "off"
+      }
     ]
   }
 }
